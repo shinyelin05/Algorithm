@@ -1,18 +1,13 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int Calc(int a, int b)
-{
-    return (a + b) * ( a-b);
+long long Calc(int a, int b) {
+    return static_cast<long long>(a + b) * (a - b);
 }
 
 int main() {
     int a, b;
-    
-    cin >> a;
-    cin >> b;
-    
-    cout << Calc(a, b);
+    cin >> a >> b;
+    cout << Calc(a, b) << endl;
     return 0;
 }
